@@ -1,0 +1,155 @@
+<div class="toggle-btn">
+    <span>&#9776;</span>
+</div>
+<ul>
+    <img class="img-profile my-4" src="./assets/img/profile.png" alt="Profile picture">
+    <a href="#component-1" class="active">
+        <li style="border-top: 1px solid rgba(100, 100, 100, .3);">
+        ABOUT ME</li>
+    </a>
+    <a href="#component-2"><li>HARD SKILLS</li></a>
+    <a href="#component-3"><li>PROJECTS</li></a>
+    <a href="#component-4"><li>EXPECTATIONS</li></a>
+    <a href="#component-5"><li>CONTACT ME</li></a>
+</ul>
+
+<style>
+#sidebar {
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background-color: #151719;
+    left: -280px;
+    transition: .3s ease all;
+}
+#sidebar.show-hide {
+    left: 0;
+    transition: .3s ease all;
+}
+#sidebar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#sidebar ul a {
+    text-decoration: none;
+    font-size: 18px;
+    color: rgba(230, 230, 230, .9);
+}
+#sidebar ul li {
+    margin: 0px 15px;
+    padding: 15px;
+    border-bottom: 1px solid rgba(100, 100, 100, .3);
+    text-align: center;
+    cursor: pointer;
+    transition: .3s ease all;
+}   
+    #sidebar ul a li:hover {
+        background-color: rgba(100, 100, 100, .3);
+        transition: .3s ease all;
+    }
+    #sidebar ul a.active li {
+        font-weight: 800;
+        text-shadow: 0 0 8px gray;
+        background-color: rgba(100, 100, 100, .3);
+        transition: .3s ease all;
+    }
+.toggle-btn {
+    float: right;
+    margin-right: -42px;
+    margin-top: 2px;
+    cursor: pointer;
+    opacity: 0.4;
+}
+    .toggle-btn:hover {
+        opacity: 1;
+    }
+.toggle-btn span {
+    display: block;
+    width: 40px;
+    text-align: center;
+    color: white;
+    background-color: gray;
+    border: solid 3px rgba(0, 0, 0, 0.6);
+    border-radius: 4px;
+    font-size: 30px;
+}
+.img-profile {
+    width: 70%;
+    border: solid 6px white;
+    border-radius: 50%;
+    background-color: orange;
+    display: block;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+</style>
+
+<script>
+    /** 
+     * FUNCTION: SHOW / HIDE THE SIDEBAR
+     */
+    const btnToggle = document.querySelector('.toggle-btn');
+
+    btnToggle.addEventListener('click', () => {
+        document.getElementById('sidebar').classList.toggle('show-hide');
+        document.getElementsByClassName('sidebar')[0].classList.toggle('show-hide');
+        document.querySelectorAll('.no-sidebar').forEach((element) => {
+            element.classList.toggle('width-changed');
+        })
+    })
+
+    /** 
+     * FUNCTION: NAVIGATION BETWEEN COMPONENTS
+     */
+    const sideNavigation = document.querySelectorAll('#sidebar a');
+    const bulletNavigation = document.querySelectorAll('#nav-bullet a');
+
+    sideNavigation.forEach((element) => {
+        element.addEventListener('click', () => {
+            const index = Array.prototype.indexOf.call(sideNavigation, element);
+            document.querySelector('#sidebar .active').classList.remove('active');
+            document.querySelector('#nav-bullet .active').classList.remove('active');
+            bulletNavigation[index].classList.add('active');
+            element.classList.add('active');
+        })
+    })
+
+    bulletNavigation.forEach((element) => {
+        element.addEventListener('click', () => {
+            const index = Array.prototype.indexOf.call(bulletNavigation, element);
+            document.querySelector('#sidebar .active').classList.remove('active');
+            document.querySelector('#nav-bullet .active').classList.remove('active');
+            sideNavigation[index].classList.add('active');
+            element.classList.add('active');
+        })
+    })
+
+    /** 
+     * FUNCTION: CHANGE THE ACTIVE CLASS WITH THE INDEX THAT YOU PASS BY PARAMETER
+     */
+    function changeNavComponent(element) {
+        document.querySelector('#sidebar .active').classList.remove('active');
+        document.querySelector('#nav-bullet .active').classList.remove('active');
+        sideNavigation[element].classList.add('active');
+        bulletNavigation[element].classList.add('active');
+    }
+
+    /** 
+     * FUNCTION: CHANGE THE ACTIVE CLASS WHEN YOU'RE NAVIGATING
+     */
+    const components = document.querySelectorAll('.no-sidebar');
+
+    components.forEach((element) => {
+        document.addEventListener('scroll', () => {
+
+            const elementTop = document.getElementById( element.id ).offsetTop;
+            let scrollDistance = elementTop - window.scrollY;
+
+            if(scrollDistance > -100 && scrollDistance < 400) {
+                changeNavComponent( getIndexById(element, components) );
+            }
+
+        })
+    })
+</script>

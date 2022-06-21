@@ -1,0 +1,121 @@
+<div id="contact-me">
+    <div class="container">     
+
+        <!-- COMPONENT TITLE -->
+        <div class="text-center m-auto pb-4" style="width: 80%;">
+            <h2 class="component-title">CONTACT ME</h2>
+        </div>
+        <!-- END COMPONENT TITLE -->
+
+        <!-- FORM -->
+        <form accept-charset="UTF-8" action="" method="POST">
+
+            <!-- FIRST ROW -->
+            <div class="row">
+                <div class="col-xl">
+                    <label class="label">Name</label>
+                    <div class="control-field">
+                        <input name="name" type="text" required>
+                    </div>
+                </div>
+                <div class="col-xl">
+                    <label class="label">Email</label>
+                    <div class="control-field">
+                        <input name="email" type="email" required>
+                    </div>
+                </div>
+            </div>
+            <!-- END FIRST ROW -->
+
+            <!-- SECOND ROW -->
+            <div class="row">
+                <div class="col-xl">
+                    <label class="label">What are you interested?</label>
+                    <div class="control-field">
+                        <select name="project" required>
+                            <option value="0" disabled selected hidden></option>
+                            <option>Contract</option>
+                            <option>Collaboration.</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-xl">
+                    <label class="label">Which service do you require?</label>
+                    <div class="control-field">
+                        <select name="role" required>
+                            <option value="0" disabled selected hidden></option>
+                            <option>Fullstack developer</option>
+                            <option>Front-End developer</option>
+                            <option>Back-End developer</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <!-- END SECOND ROW -->
+
+            <!-- THIRD ROW -->
+            <div class="row">
+                <div class="field">
+                    <label class="label">Additional details</label>
+                    <div class="control-field">
+                        <textarea name="message" rows="5" required></textarea>
+                    </div>
+                    </div>
+            </div>
+            <!-- END THIRD ROW -->
+
+            <!-- SUBMIT BUTTON -->
+            <div class="row mt-3">
+                <div class="col d-flex justify-content-center" style="width: 100%;">
+                    <button id="submit-btn" type="button" class="btn btn-secondary">SUBMIT</button>
+                </div>
+            </div>
+            <!-- END SUBMIT BUTTON -->
+
+        </form>
+        <!-- END FORM -->
+
+    </div>
+</div>
+
+<style>
+#contact-me {
+    height: 500px;
+    margin-top: 5rem;
+}
+
+#contact-me .container {
+    width: 65%;
+}
+#contact-me .container .label {
+    font-size: 1.25rem;
+    padding-top: 1rem;
+    padding-bottom: 0.25rem;
+
+
+}
+#contact-me .container .control-field input,
+#contact-me .container .control-field select,
+#contact-me .container .control-field select option {
+    height: 40px;
+    width: 100%;
+    border-radius: 5px;
+    color: black;
+    background-color: beige;
+}
+#contact-me .container .control-field textarea {
+    width: 100%;
+    border-radius: 5px;
+    color: black;
+    background-color: beige;
+}
+#submit-btn {
+    width: 200px;
+    margin-bottom: 50px;
+}
+    @media (max-width: 1200px) {
+        #submit-btn {
+            width: 100%;
+        }
+    }
+</style>

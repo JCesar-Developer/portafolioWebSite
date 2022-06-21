@@ -1,0 +1,117 @@
+<div id="expectations">
+    <!-- TITLE -->
+    <div class="text-center m-auto" style="width: 80%;">
+        <h2 class="component-title">
+            MY STARTUP PROJECTS
+        </h2>
+        <p>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        </p>
+    </div>
+    <!-- END TITLE -->
+
+    <!-- CLOUD TAGS -->
+    <div class="row">
+        <!-- CLOUD TAG's -->
+        <div id="cloud" class="col">
+            <ul role="navigation" aria-label="Webdev tag cloud">
+                <li id="tag-1" data-weight="4" onclick="openTag(this.id)">HTTP</li>
+                <li id="tag-2" data-weight="2" onclick="openTag(this.id)">Ember</li>
+                <li id="tag-3" data-weight="5" onclick="openTag(this.id)">Sass</li>
+                <li id="tag-4" data-weight="8" onclick="openTag(this.id)">HTML</li>
+                <li id="tag-5" data-weight="6" onclick="openTag(this.id)">FlexBox</li>
+                <li id="tag-6" data-weight="4" onclick="openTag(this.id)">API</li>
+                <li id="tag-7" data-weight="5" onclick="openTag(this.id)">VueJS</li>
+                <li id="tag-8" data-weight="6" onclick="openTag(this.id)">Grid</li>
+                <li id="tag-9" data-weight="3" onclick="openTag(this.id)">Rest</li>
+                <li id="tag-10" data-weight="9" onclick="openTag(this.id)">JavaScript</li>
+                <li id="tag-11" data-weight="3" onclick="openTag(this.id)">Animation</li>
+                <li id="tag-12" data-weight="7" onclick="openTag(this.id)">React</li>
+                <li id="tag-13" data-weight="8" onclick="openTag(this.id)">CSS</li>
+                <li id="tag-14" data-weight="1" onclick="openTag(this.id)">Cache</li>
+                <li id="tag-15" data-weight="3" onclick="openTag(this.id)">Less</li>
+            </ul>
+        </div>
+        <!-- END CLOUD TAG's -->
+
+        <!-- CLOUD TAG's CONTENT -->
+        <div class="col">
+            <h2 id="soft-skill-title"></h2>
+            <p id="soft-skill-content"></p>
+        </div>
+        <!-- CLOUD TAG's CONTENT -->
+
+    </div>
+</div>
+
+<style>
+/* CLOUD VARIABLES: FONT WEIGHTS */
+#cloud ul li[data-weight="1"] { --size: 1; }
+#cloud ul li[data-weight="2"] { --size: 2; }
+#cloud ul li[data-weight="3"] { --size: 3; }
+#cloud ul li[data-weight="4"] { --size: 4; }
+#cloud ul li[data-weight="5"] { --size: 5; }
+#cloud ul li[data-weight="6"] { --size: 6; }
+#cloud ul li[data-weight="7"] { --size: 7; }
+#cloud ul li[data-weight="8"] { --size: 8; }
+#cloud ul li[data-weight="9"] { --size: 9; }
+
+/* CLOUD VARIABLES: FONT COLORS */
+#cloud ul li:nth-child(n+1) { --color: #a33; }
+#cloud ul li:nth-child(2n+1) { --color: #181; }
+#cloud ul li:nth-child(3n+1) { --color: #33a; }
+#cloud ul li:nth-child(4n+1) { --color: #c38; }
+
+
+#expectations {
+    height: 500px;
+    border: solid blue;
+}
+/* TAG's STYLE */
+#cloud {
+    border: solid cyan;
+}
+
+#cloud ul {
+    width: 80%;
+    padding: 0px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    line-height: 2.5rem;
+}
+#cloud ul li {
+    --size: 4;
+    font-size: calc(var(--size) * 0.35rem + 0.6rem);
+    font-weight: calc(var(--size) * 120);
+    display: block;
+    padding: 0.75rem 0.35rem;
+    position: relative;
+    color: var(--color);
+    cursor: pointer;
+    opacity: calc((15 - (9 - var(--size))) / 15); 
+}
+/* TAG's ANIMATION */
+#cloud ul li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 0;
+  height: 100%;
+  background: var(--color);
+  transform: translate(-50%, 0);
+  opacity: 0.25;
+  transition: width 0.25s;
+}
+#cloud ul li:focus::before,
+#cloud ul li:hover::before {
+    width: 100%;
+}
+</style>
+
+<script>
+
+</script>

@@ -1,0 +1,27 @@
+[
+    {
+        "tag": "tag-1",
+        "title": "Compromiso",
+        "content": "lorem ipsum dolor sit amet"
+    },
+    {
+        "tag": "tag-2",
+        "title": "Responsabilidad",
+        "content": "lorem ipsum dolor sit amet"
+    },
+    {
+        "tag": "tag-3",
+        "title": "Iniciativa",
+        "content": "lorem ipsum dolor sit amet"
+    },
+    {
+        "tag": "tag-4",
+        "title": "Honestidad",
+        "content": "lorem ipsum dolor sit amet"
+    },
+    {
+        "tag": "tag-5",
+        "title": "Ética",
+        "content": "lorem ipsum dolor sit amet"
+    }
+]
