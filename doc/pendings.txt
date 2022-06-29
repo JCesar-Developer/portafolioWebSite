@@ -1,0 +1,42 @@
+=========================================================
+DIRECTIVES
+=========================================================
+- In English
+- Minimalist: Clean & Clear.
+- Responsibe to: Web, Tablet, Web-Movil.
+
+=========================================================
+PENDIENTES
+=========================================================
+----------------------------------------------------------
+- Arreglar la visibilidad del componente de expectativas.
+    |-> Entrar con animasión de disolución
+    |-> Ordenar la tipografía
+        - Supertitulo.
+        - Titulo.
+        - Subtitulo.
+        - Parrafo normal.
+        - Parrafo degradado
+    |-> Ordenar colores
+    |-> Cambiar imágenes de 
+- Arreglar la página de contacto.
+- Arreglar diseño responsibe.
+- Agregar una transisión correcta al minimizar el SIDE-BAR
+    |-> Que aparezcan letras en la nevagación lateral.
+
+----------------------------------------------------------
+- Pasar mi LinkedIn a Ingles.
+
+----------------------------------------------------------
+EMPEZAR A ARREGLAR LOS PROYECTOS PERSONALES:
+- Proyecto1:    - Hacer el DEPLOIMENT.
+                - Arreglar el Readmy (GIT)  -> Agregar arquitectura
+                                            -> ¿Algún diagrama de UML?
+                - Mejorar presentación en video. (YOUTUBE)
+- Proyecto2: 
+- Proyecto3: 
+- Proyecto4: 
+- [AL FINAL] Hoy: Solucionar el responsibe en diferentes tipos de dispositivos
+
+EMPEZAR A ESTUDIAR CIENCIAS DE DATOS. 
+----------------------------------------------------------

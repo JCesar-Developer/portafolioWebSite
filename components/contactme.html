@@ -8,7 +8,8 @@
         <!-- END COMPONENT TITLE -->
 
         <!-- FORM -->
-        <form accept-charset="UTF-8" action="" method="POST">
+        <!-- <form onsubmit="sendEmail(); reset(); return false;"> -->
+        <form action="https://formsubmit.co/e074758cf00b4a9bbf27acccc6fba229" method="POST">
 
             <!-- FIRST ROW -->
             <div class="row">
@@ -30,20 +31,20 @@
             <!-- SECOND ROW -->
             <div class="row">
                 <div class="col-xl">
-                    <label class="label">What are you interested?</label>
+                    <label class="label">Type of agreement</label>
                     <div class="control-field">
-                        <select name="project" required>
-                            <option value="0" disabled selected hidden></option>
+                        <select name="agreement" required>
+                            <option disabled selected hidden></option>
                             <option>Contract</option>
                             <option>Collaboration.</option>
                         </select>
                     </div>
                 </div>
                 <div class="col-xl">
-                    <label class="label">Which service do you require?</label>
+                    <label class="label">How can I help you?</label>
                     <div class="control-field">
                         <select name="role" required>
-                            <option value="0" disabled selected hidden></option>
+                            <option disabled selected hidden></option>
                             <option>Fullstack developer</option>
                             <option>Front-End developer</option>
                             <option>Back-End developer</option>
@@ -56,9 +57,9 @@
             <!-- THIRD ROW -->
             <div class="row">
                 <div class="field">
-                    <label class="label">Additional details</label>
+                    <label class="label">Offer details (external links can be added)</label>
                     <div class="control-field">
-                        <textarea name="message" rows="5" required></textarea>
+                        <textarea name="details" rows="5" required></textarea>
                     </div>
                     </div>
             </div>
@@ -67,10 +68,13 @@
             <!-- SUBMIT BUTTON -->
             <div class="row mt-3">
                 <div class="col d-flex justify-content-center" style="width: 100%;">
-                    <button id="submit-btn" type="button" class="btn btn-secondary">SUBMIT</button>
+                    <button type="submit" class="btn btn-secondary">SEND</button>
                 </div>
             </div>
             <!-- END SUBMIT BUTTON -->
+
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+            <input type="hidden" name="_captcha" value="false">
 
         </form>
         <!-- END FORM -->

@@ -1,27 +1,80 @@
 [
     {
-        "tag": "tag-1",
-        "title": "Compromiso",
-        "content": "lorem ipsum dolor sit amet"
+        "id": "tag-1",
+        "title": "Commitment",
+        "dataWeight": 6,
+        "content": "I like constant communication, with the leaders as well as with the members of my team, I like to get involved in the project and in the responsibilities that are delegated to me, first contributing with the requested functional requirements, and then, if possible, with suggestions and annotations."
     },
     {
-        "tag": "tag-2",
-        "title": "Responsabilidad",
-        "content": "lorem ipsum dolor sit amet"
+        "id": "tag-2",
+        "title": "Music",
+        "dataWeight": 4,
+        "content": "I love the violin! And although I am a frustrated instrumentalist, music is for me the most sincere of the arts. I equally enjoy getting lost in the sea of ​​a symphony of a classical music concert as closing my eyes with headphones on and unraveling the musical arrangements of a POP song."
     },
     {
-        "tag": "tag-3",
-        "title": "Iniciativa",
-        "content": "lorem ipsum dolor sit amet"
+        "id": "tag-3",
+        "title": "Leadership",
+        "dataWeight": 9,
+        "content": "I have a knack for leading teams, I'm good at it. I like to be in charge of large or small projects, and I can structure plans, empathize and motivate my colleagues, in order to reach the objectives set. And finally, take responsibility for the results, be they good or bad."
     },
     {
-        "tag": "tag-4",
-        "title": "Honestidad",
-        "content": "lorem ipsum dolor sit amet"
+        "id": "tag-4",
+        "title": "Ethics",
+        "dataWeight": 5,
+        "content": "My moral code guides my desires, my projects are always in line with my values ​​scheme, and my long-term goals go above instantaneous and temporary well-being."
     },
     {
-        "tag": "tag-5",
-        "title": "Ética",
-        "content": "lorem ipsum dolor sit amet"
+        "id": "tag-5",
+        "title": "Sport",
+        "dataWeight": 7,
+        "content": "In sports, I consciously classify myself in the category of GEEK, and fortunately, I was lucky enough to study and live from what I like. Currently I have focused my sports career on Wellness, coaching and physical and sports rehabilitation, and I couldn't feel more gratified with what I do, with my work and with my clients."
+    },
+    {
+        "id": "tag-6",
+        "title": "Walks",
+        "dataWeight": 6,
+        "content": "A passion that I am beginning to discover. And that I fell in love."
+    },
+    {
+        "id": "tag-7",
+        "title": "Ability to teach",
+        "dataWeight": 5,
+        "content": "I have facility to explain complex knowledge, besides that it entertains me to look for the simple way, to explain them. That also helps me reinforce said knowledge by relating it in the process with other associated knowledge that I have been acquiring over time."
+    },
+    {
+        "id": "tag-8",
+        "title": "Interest in learning",
+        "dataWeight": 4,
+        "content": "Like any good programmer, I find myself in a constant search for new knowledge or the reinforcement of knowledge already acquired. My new personal projects are the book on design patterns CLEAN ARCHITECTURE by Robert C. Martin, various testing and refactoring courses from the academy. CodelyTv and of course, apply all this new knowledge in new and fun projects."
+    },
+    {
+        "id": "tag-9",
+        "title": "What really matter",
+        "dataWeight": 4,
+        "content": "Family, friends and people who appreciate me and with whom I can smile. They are the engine of my life."
+    },
+    {
+        "id": "tag-10",
+        "title": "Versatility",
+        "dataWeight": 7,
+        "content": "Although I spend more time developing BackEnd functionalities, I can work perfectly in any other branch of web development, whether it's developing FRONT interfaces, creating specialized database queries, correcting defects in my operating systems, etc."
+    },
+    {
+        "id": "tag-11",
+        "title": "Aspirations",
+        "dataWeight": 9,
+        "content": "Everyone longs for high positions, good salaries, valuable positions, me too. But what I want most at this time in my life is to learn, I am clear about what I want: physiotherapy, economics, robotics and data science. What I'm still not sure about is what I'll have to give up to be the best at one thing."
+    },
+    {
+        "id": "tag-12",
+        "title": "Clean and organized",
+        "dataWeight": 4,
+        "content": "Clean and organized, both in my set-up and in my schedules. I like to have everything minimally structured and reflect that, I demonstrate it in my code and file packages, in my application of good practices and design patterns in development."
+    },
+    {
+        "id": "tag-13",
+        "title": "Ease of teamwork",
+        "dataWeight": 6,
+        "content": "It is something that I like very much, in a work team, nobody is good at everything and everyone is a specialist in something, the knowledge that I have and others do not and the knowledge that others have acquired and I do not know, that feedback and synergy constant to reach a goal, either as a leader, or as one more cog in the team, I like it, it entertains me and motivates me."
     }
 ]

@@ -2,44 +2,40 @@
     <!-- TITLE -->
     <div class="text-center m-auto" style="width: 80%;">
         <h2 class="component-title">
-            MY STARTUP PROJECTS
+            MY EXPECTATIONS AND SOFT-SKILLS
         </h2>
+        <p class="mt-3">
+            I started studying web development out of pure curiosity, without a specific expectation, and for the simple interest of knowing what all that was about in the world of programming. Over time, I fell in love with algorithmic logic and saw how with just my code and my computer I could bring multiple projects to life on one screen. That led me to want more, to delve deeper into the understanding of APIs, frameworks, and different design patterns capable of accelerating the behavior of my programs.
+        </p>
         <p>
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            I recognize that I still have a lot to learn and that in these two years of training I have only touched the tip of the software development iceberg, but I want to continue growing in this world, hand in hand with people who share the same passion.
+        </p>
+        <p>
+            I hope to be part of a great team with which to grow and develop as a professional, and if the opportunity and merit allow me, to lead my development team in the future.
         </p>
     </div>
     <!-- END TITLE -->
 
     <!-- CLOUD TAGS -->
-    <div class="row">
+    <div class="row mt-5">
         <!-- CLOUD TAG's -->
         <div id="cloud" class="col">
-            <ul role="navigation" aria-label="Webdev tag cloud">
-                <li id="tag-1" data-weight="4" onclick="openTag(this.id)">HTTP</li>
-                <li id="tag-2" data-weight="2" onclick="openTag(this.id)">Ember</li>
-                <li id="tag-3" data-weight="5" onclick="openTag(this.id)">Sass</li>
-                <li id="tag-4" data-weight="8" onclick="openTag(this.id)">HTML</li>
-                <li id="tag-5" data-weight="6" onclick="openTag(this.id)">FlexBox</li>
-                <li id="tag-6" data-weight="4" onclick="openTag(this.id)">API</li>
-                <li id="tag-7" data-weight="5" onclick="openTag(this.id)">VueJS</li>
-                <li id="tag-8" data-weight="6" onclick="openTag(this.id)">Grid</li>
-                <li id="tag-9" data-weight="3" onclick="openTag(this.id)">Rest</li>
-                <li id="tag-10" data-weight="9" onclick="openTag(this.id)">JavaScript</li>
-                <li id="tag-11" data-weight="3" onclick="openTag(this.id)">Animation</li>
-                <li id="tag-12" data-weight="7" onclick="openTag(this.id)">React</li>
-                <li id="tag-13" data-weight="8" onclick="openTag(this.id)">CSS</li>
-                <li id="tag-14" data-weight="1" onclick="openTag(this.id)">Cache</li>
-                <li id="tag-15" data-weight="3" onclick="openTag(this.id)">Less</li>
+            <ul id="cloud-tagList" role="navigation" aria-label="Webdev tag cloud">
             </ul>
         </div>
         <!-- END CLOUD TAG's -->
 
-        <!-- CLOUD TAG's CONTENT -->
-        <div class="col">
-            <h2 id="soft-skill-title"></h2>
-            <p id="soft-skill-content"></p>
+        <!-- COMPONENT: CLOUD TAG's CONTENT -->
+        <div id="tag-content" class="col">
+            <div class="container">
+                <h3 class="text-center text-uppercase mb-4" id="soft-skill-title"></h3>
+                <!-- <div id="soft-skill-img-container" class="container mt-4 mb-4" style="padding-left: 0px;padding-right: 0px;">
+                    <img id="soft-skill-img"></img>
+                </div> -->
+                <p class="text-center mt-4" id="soft-skill-content"></p>
+            </div>
         </div>
-        <!-- CLOUD TAG's CONTENT -->
+        <!-- END COMPONENT: CLOUD TAG's CONTENT -->
 
     </div>
 </div>
@@ -64,14 +60,9 @@
 
 
 #expectations {
-    height: 500px;
-    border: solid blue;
+    height: 100%;
 }
 /* TAG's STYLE */
-#cloud {
-    border: solid cyan;
-}
-
 #cloud ul {
     width: 80%;
     padding: 0px;
@@ -84,8 +75,8 @@
 }
 #cloud ul li {
     --size: 4;
-    font-size: calc(var(--size) * 0.35rem + 0.6rem);
-    font-weight: calc(var(--size) * 120);
+    font-size: calc(var(--size) * 0.3rem + 0.5rem);
+    font-weight: calc(var(--size) * 110);
     display: block;
     padding: 0.75rem 0.35rem;
     position: relative;
@@ -95,23 +86,62 @@
 }
 /* TAG's ANIMATION */
 #cloud ul li::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 0;
-  height: 100%;
-  background: var(--color);
-  transform: translate(-50%, 0);
-  opacity: 0.25;
-  transition: width 0.25s;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 0;
+    height: 100%;
+    background: var(--color);
+    transform: translate(-50%, 0);
+    opacity: 0.25;
+    transition: width 0.25s;
 }
 #cloud ul li:focus::before,
 #cloud ul li:hover::before {
     width: 100%;
 }
+#tag-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#tag-content .container {
+    width: 100%;
+}
+/* #tag-content #soft-skill-img-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+#tag-content #soft-skill-img-container #soft-skill-img {
+    max-width: 75%;
+    border-radius: 10px;
+    box-shadow: 8px 8px 15px black;
+} */
 </style>
 
 <script>
 
+const tagList = document.querySelector('#cloud-tagList');
+
+fetch('./json/soft-skills.json')
+    .then(response => response.json())
+    .then(data => {
+        
+        data.forEach( tag => {
+            const newLi = document.createElement("li");
+            const textNode = document.createTextNode( tag.title );
+
+            newLi.setAttribute('id', tag.id);
+            newLi.setAttribute('data-weight', tag.dataWeight);
+            newLi.setAttribute('onclick', 'openTag(this.id)');
+            newLi.appendChild(textNode);
+
+            tagList.appendChild(newLi);
+
+        });
+
+    })
 </script>

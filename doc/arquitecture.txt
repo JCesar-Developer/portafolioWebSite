@@ -1,0 +1,61 @@
+=========================================================
+ARQUITECTURE
+=========================================================
+    |-> "About me" component.
+    |-> "Hard skills" component.
+    |-> "Proyects" component.
+        |
+        |-> FRONT END <section>
+            |-> P1: Angular project ( Web | Git | Video )
+            |-> P2: React Native project
+        |
+        |-> FULL STACK <section>
+            |-> P3: SpringBoot FullStack project
+            |-> P4: NodeJS FullStack project
+            |-> P5: Laravel FullStack project
+        |
+        |-> BACK END <section>
+            |-> P3: SpringBoot API REST
+            |-> P4: NodeJS API REST
+    |
+    |-> "Expectations" component.
+    |-> "Contact me" component.
+        |-> Nombre / Razón social.
+        |-> Email de contacto.
+        |-> Tipo de acuerdo.
+            |-> Acuerdo de prácticas.
+            |-> Colaboración.
+            |-> Contrato.
+        |-> ¿Cómo puedo ayudarte?
+            |-> Desarrollador FullStack.
+            |-> Desarrollador Front-End.
+            |-> Desarrollador Back-End.
+        |-> Detalles de la oferta (se pueden añadir links externos).
+
+=========================================================
+GIT - PUBLIC REPOSITORIES
+=========================================================
+
+--- FRONT
+    - Front || WebApplication || Angular + Firebase || Músic player (ngMusicPlayer).
+      Sumary: With this single page music player (developed in Angular), you can create your own albums with your favorite music. Add new songs, delete them and modify their properties. List your favorite songs. Create your own albums and enjoy the pleasant interface of this web page.
+
+    - Front || Android || ReactNative + Expo-cli + Firebase || ReactNative + Firebase || Challenges Application (expoBeYourBest).
+      Sumary: Be-your-best, is a mobile application, developed for Android and that works as a personal label, where each user can list different personal challenges, schedule them, determine a start date, and their corresponding deadlines. As well as customize your own profile and share your challenges.
+
+--- JAVA
+    - FullStack Java || WebApplication  || SpringBoot + Thymeleaf + MySQL || Menu and dish shop (springToYourHome).
+    - Back || API || SpringBoot API + MySQL || Menu and dish shop (springToYourHome).
+
+--- JS
+    - FullStack JS || WebApplication  || NodeJS + ExpressJS + HTML5 + MongoDB || Waiting room to games (nodeGameScript).
+    - Back || API || NodeJS API - Back - API + MongoDB || Waiting room to games (nodeGameScript).
+
+--- TRAINING EXERCISES
+    - Training exercises with Java || to Desktop || Java + JavaFX + Hibernate || Desktop application || Learning MVC + DAO & Factory Pattern (javaORMApp).
+    - Training exercises with Java || to Desktop || Java + Shell (Windows, Linux) || Desktop application || Learning POO (javaPOOTraining).
+    - Training exercises with C || to Desktop || C + Shell (Windows) || Desktop application || Learning to use console + algorithmic logic. (algorithmicLogicWithC)
+
+--- PERSONAL
+    - Personal video presentation || video website || Adobe Premiere + Adobe Photoshop + Adobe Ilustrator || (videoWebSite).
+    - Personal web portafolio || portafolio website || HTML5 + CSS + JS + JSON || (portafolioWebSite)

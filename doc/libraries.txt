@@ -1,0 +1,12 @@
+=========================================================
+REFERENCES
+=========================================================
+- https://cms-assets.tutsplus.com/cdn-cgi/image/width=630/uploads/users/1223/posts/38084/image-upload/Sergio.jpg
+- https://i.pinimg.com/originals/c8/42/ed/c842ed4512573e738ab8f87de484a980.jpg
+
+=========================================================
+DOCUMENTATION
+=========================================================
+- CSS Selectors :   https://www.w3schools.com/cssref/css_selectors.asp
+- Web Icons     :   https://vecta.io/symbols/25/web-technologies
+- CloudTags     :   https://dev.to/alvaromontoro/create-a-tag-cloud-with-html-and-css-1e90
