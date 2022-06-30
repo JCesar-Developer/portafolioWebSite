@@ -10,3 +10,11 @@ DOCUMENTATION
 - CSS Selectors :   https://www.w3schools.com/cssref/css_selectors.asp
 - Web Icons     :   https://vecta.io/symbols/25/web-technologies
 - CloudTags     :   https://dev.to/alvaromontoro/create-a-tag-cloud-with-html-and-css-1e90
+
+=========================================================
+JS FUNCTIONS
+=========================================================
+- document
+- window
+    - addEventListener      //
+    - 

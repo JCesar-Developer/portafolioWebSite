@@ -8,6 +8,21 @@ DIRECTIVES
 =========================================================
 PENDIENTES
 =========================================================
+- AGREGAR GIT-IGNORE.
+- CREAR PRIMER TAG.
+- SUBIR A GITHUB.
+- Curriculúm en ingles y curriculúm en castellano.
+- Implementar LinkedIn en diferentes idiomas.
+----------------------------------------------------------
+VERSIÓN 2:
+----------------------------------------------------------
+SideBar.
+AboutMe.
+HardSkills.
+Projects.
+Expectations.
+ContactMe.
+
 ----------------------------------------------------------
 - Arreglar la visibilidad del componente de expectativas.
     |-> Entrar con animasión de disolución
@@ -26,7 +41,6 @@ PENDIENTES
 
 ----------------------------------------------------------
 - Pasar mi LinkedIn a Ingles.
-
 ----------------------------------------------------------
 EMPEZAR A ARREGLAR LOS PROYECTOS PERSONALES:
 - Proyecto1:    - Hacer el DEPLOIMENT.
