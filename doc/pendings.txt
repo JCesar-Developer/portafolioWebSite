@@ -4,6 +4,7 @@ DIRECTIVES
 - In English
 - Minimalist: Clean & Clear.
 - Responsibe to: Web, Tablet, Web-Movil.
+- Technologies: Docker, Heroku, GitHub
 
 =========================================================
 PENDIENTES
